@@ -70,11 +70,6 @@ export const OrderSchema = new Schema({
         required: true
     },
 
-    deliveryType: {
-        type: String,
-        required: true
-    },
-
     deliveryApartment: {
         type: String
     },
