@@ -22,6 +22,10 @@ const OrderEntrySchema = new Schema({
         type: String,
         required: true
     }, 
+    productName: {
+        type: String,
+        required: true
+    }, 
     basePrice: {
         type: Number,
         required: true
