@@ -30,6 +30,22 @@ const OrderEntrySchema = new Schema({
         type: Number,
         required: true
     }, 
+    promo: {
+        type: Boolean,
+        required: false
+    },
+    discountValue: {
+        type: Number,
+        required: false
+    }, 
+    discountPercentage: {
+        type: Boolean,
+        required: false
+    }, 
+    productReferencePrice: {
+        type: Number,
+        required: false
+    }
 });
 
 export const OrderSchema = new Schema({
