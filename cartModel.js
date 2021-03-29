@@ -59,57 +59,8 @@ export const CartSchema = new Schema({
         type: Number,
         required: true
     },
-    deliveryCost: {
-        type: String,
-        required: true
-    },
-    deliveryMode: {
-        type: String,
-        required: true
-    },
+    
 
-    customerEmail: {
-        type: String
-    },
-
-    customerPhone: {
-        type: String,
-        required: true
-    },
-
-    customer: {
-        type: Schema.Types.ObjectId,
-        ref: 'Customer'
-    },
-
-    status: {
-        type: String,
-        required: true
-    },
-    paymentStatus: {
-        type: String,
-        required: true
-    },
-    deliveryAddress: {
-        type: String,
-        required: true
-    },
-
-    deliveryApartment: {
-        type: String
-    },
-
-    deliveryEnterprise: {
-        type: String
-    },
-
-    deliveryNote: {
-        type: String
-    },
-
-    pickupStore: {
-        type: String
-    },
     entries: {
         type: [CartEntrySchema],
         default: []
