@@ -4,7 +4,7 @@ import mongoose, { Schema } from 'mongoose'
 const CartEntrySchema = new Schema({ 
     code: {
         type: String,
-        required: true
+        required: true,
     }, 
     totalPrice: {
         type: Number,
@@ -50,6 +50,11 @@ const CartEntrySchema = new Schema({
 
 export const CartSchema = new Schema({
 
+    code: {
+        type: String,
+        required: true,
+        unique: true,
+    }, 
     totalPrice: {
         type: Number,
         required: true
