@@ -13,6 +13,9 @@ export const CategorySchema = mongoose.Schema({
     productsCount: {
         type: String
     },
+    imgUrl: {
+        type: String
+    },
     products: [{
         type: Schema.Types.ObjectId,
         ref: 'Product'
