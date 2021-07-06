@@ -15,7 +15,8 @@ export const ProductSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        trim: true  
+        trim: true,
+        index: true,
     },
     mainImgUrl: {
         type: String,
