@@ -7,7 +7,6 @@ export const ProductSchema = new mongoose.Schema({
         required: true,
         trim: true,
         index: true,
-        test:test
     },
     price: {
         type: Number,
