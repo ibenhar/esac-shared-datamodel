@@ -6,7 +6,6 @@ export const ProductSchema = new mongoose.Schema({
         type: String,
         required: true,
         trim: true,
-        index: true,
     },
     price: {
         type: Number,
@@ -50,3 +49,5 @@ export const ProductSchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
+
+ProductSchema.index({name: 'text'});
