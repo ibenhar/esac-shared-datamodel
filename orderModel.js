@@ -1,7 +1,7 @@
 import mongoose, { Schema } from 'mongoose'
 
 
-const OrderEntrySchema = new Schema({ 
+export const OrderEntrySchema = new Schema({ 
     code: {
         type: String,
         required: true
